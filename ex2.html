@@ -8,15 +8,18 @@
     <script>
         function chiaHetCho3(n) {
             let count = 0;
+            let mang = []
             while (count < 15) {
                 if (n % 3 === 0) {
-                    document.write(`${n} <br>`);
+                    mang.push(n)
                     count++;
                 }
                 n++;
             }
+            document.write(`${mang}`)
         }
         chiaHetCho3(prompt('nhập số của bạn'));
+
 
     </script>
 </body>
