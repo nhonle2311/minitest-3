@@ -5,22 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-<label for="inputn">Enter a number:</label>
-<input type="number" id="inputn" value="">
-<button onclick="calculate()">Calculate</button>
-
-<script>
-    function calculate() {
-        let n = document.getElementById('inputn').value;
-        let count = 0;
-        if (n % 3 === 0 && count < 15) {
-            for (let i = 0; i < 15; i++) {
-                document.write(`${parseInt(n) + i * 3}<br>`);
+    <script>
+        function chiaHetCho3(n) {
+            let count = 0;
+            while (count < 15) {
+                if (n % 3 === 0) {
+                    document.write(`${n} <br>`);
+                    count++;
+                }
+                n++;
             }
-        } else {
-            document.write("nhập lại số chia hết cho 3:");
         }
-    }
-</script>
+        chiaHetCho3(prompt('nhập số của bạn'));
+
+    </script>
 </body>
 </html>

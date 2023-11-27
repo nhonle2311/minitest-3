@@ -6,17 +6,18 @@
 </head>
 <body>
     <script>
-        function showArray() {
-            let inputArray = prompt('nhập các số',);
-            let splitInputArray = inputArray.split(',');
-            let positiveSplitInputArray = splitInputArray.filter(number => number > 0);
-            if (positiveSplitInputArray.length > 0){
-                    document.write(`mảng các ố lớn hơn 0: ${positiveSplitInputArray}`);
-                }else {
-                    document.write(`nhap lai chuoi co so lon hon 0:`)
-                }
+        function laySoDuong(arr) {
+            let soDuong = arr.filter(function (so) {
+                return so > 0;
+            });
+            return soDuong;
         }
-        showArray();
+
+        let mangSo = [-2, 5, -8, 0, 10, -3, 7];
+        let ketQua = laySoDuong(mangSo);
+
+        document.write(`${ketQua}`);
+
     </script>
 </body>
 </html>
