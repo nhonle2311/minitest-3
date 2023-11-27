@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function showArray() {
+            let inputArray = prompt('nhập các số',);
+            let splitInputArray = inputArray.split(',');
+            let positiveSplitInputArray = splitInputArray.filter(number => number > 0);
+            if (positiveSplitInputArray.length > 0){
+                    document.write(`mảng các ố lớn hơn 0: ${positiveSplitInputArray}`);
+                }else {
+                    document.write(`nhap lai chuoi co so lon hon 0:`)
+                }
+        }
+        showArray();
+    </script>
+</body>
+</html>

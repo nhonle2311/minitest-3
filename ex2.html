@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="inputn">Enter a number:</label>
+<input type="number" id="inputn" value="">
+<button onclick="calculate()">Calculate</button>
+
+<script>
+    function calculate() {
+        let n = document.getElementById('inputn').value;
+        let count = 0;
+        if (n % 3 === 0 && count < 15) {
+            for (let i = 0; i < 15; i++) {
+                document.write(`${parseInt(n) + i * 3}<br>`);
+            }
+        } else {
+            document.write("nhập lại số chia hết cho 3:");
+        }
+    }
+</script>
+</body>
+</html>
